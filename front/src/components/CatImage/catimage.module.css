@@ -1,0 +1,46 @@
+.image, .imageBox{
+    width:225px;
+    height:225px;
+}
+
+.imageBox{
+    position: relative;
+    margin:24px;
+}
+
+
+.imageBox:hover{
+    margin: 8px;
+    box-shadow: 0px 9px 18px #0000002e, 0px 6px 5px #0000003d;
+    border:16px solid white;
+}
+
+.imageBox:hover .fade{
+    position: absolute;
+    bottom:-16px;
+    left:-16px;
+    width: 257px;
+    height: 94px;
+    background:linear-gradient(#ffffff00, #ffffffff);
+}
+
+.imageBox:hover .heart, .heartLike{
+    position: absolute;
+    left:180px;
+    top:180px;
+    width: 40px;
+    height: 36.7px;
+    background-image: url('/heartEmpty.svg');
+}
+
+.imageBox:hover .heart:hover{
+    background-image: url('/heartHover.svg');
+}
+
+.heartLike{
+    background-image: url('/heartLike.svg');
+}
+
+.heartLike, .heart:hover, .heart{
+    stroke-width: 10px;
+}
